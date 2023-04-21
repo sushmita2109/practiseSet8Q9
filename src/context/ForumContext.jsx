@@ -7,8 +7,6 @@ export const ForumContext = createContext();
 
 export const ForumProvider = ({ children }) => {
   const [forumData, setForumData] = useState([]);
-
-  const [downvote, setDownvote] = useState(0);
   const [answers, setAnswers] = useState("");
 
   const getData = async () => {
